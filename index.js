@@ -14,7 +14,7 @@ client.on('ready', async () => {
 	console.log(colorette.bgGreen('Logged onto Discord!'))
 
 	console.log(colorette.bgBlue('Starting up the emulator'))
-	execa('mednafen', 'roms/pokegold.gbc')
+	execa('mednafen', 'roms/pokegold.gbc').then(process => console.log(process.stdout))
 })
 
 client.login(process.env.TOKEN)
