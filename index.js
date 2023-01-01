@@ -14,7 +14,7 @@ const client = new Client({
 client.on('ready', () => {
 	console.log(colorette.bgGreen('Logged onto Discord!'))
 
-	execa('echo Hey!').then(process => console.log(process.stdout))
+	execa('echo', 'hey').then(process => console.log(process.stdout))
 })
 
 client.login(process.env.TOKEN)
