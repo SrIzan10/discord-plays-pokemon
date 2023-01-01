@@ -1,4 +1,3 @@
-import { keyboard, Key } from '@nut-tree/nut-js'
 import { execa } from 'execa'
 import 'dotenv/config'
 import { Client } from 'discord.js'
