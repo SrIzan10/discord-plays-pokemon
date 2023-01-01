@@ -36,7 +36,7 @@ client.on('ready', async () => {
 		'-b:a', '128k',
 		'-f', 'flv',
 		`rtmp://mad02.contribute.live-video.net/app/${process.env.TWITCH_STREAMKEY}`
-	  ], {shell: true})
+	  ], {shell: true}).then(cmd => console.log(cmd.stdout))
 })
 
 client.login(process.env.TOKEN)
