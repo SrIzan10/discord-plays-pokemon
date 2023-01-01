@@ -23,7 +23,7 @@ client.on('ready', async () => {
 	console.log(colorette.bgBlue('Streaming to Twitch!'))
 	execa('ffmpeg', [
 		'-f', 'x11grab',
-		'-s', '1280x720',
+		'-s', '1364x629',
 		'-i', `:11.0+0,0`,
 		'-tune', 'zerolatency',
 		'-preset', 'ultrafast',
