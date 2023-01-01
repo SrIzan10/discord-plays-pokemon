@@ -11,11 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nut-tree/nut-js": "^2.3.0",
     "colorette": "^2.0.19",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
     "execa": "^6.1.0",
-    "node-media-server": "^2.4.9",
-    "robotjs": "^0.6.0"
+    "node-media-server": "^2.4.9"
   }
 }

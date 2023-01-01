@@ -1,5 +1,5 @@
-import robot from 'robotjs'
-import {execa} from 'execa'
+import { keyboard, key } from '@nut-tree/nut-js'
+import { execa } from 'execa'
 import 'dotenv/config'
 import { Client } from 'discord.js'
 import * as colorette from 'colorette'
