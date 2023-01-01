@@ -24,7 +24,7 @@ client.on('ready', async () => {
 	execa('ffmpeg', [
 		'-f', 'x11grab',
 		'-s', '854x480',
-		'-i', `${execa('echo', ['$DISPLAY']).then(cmd => cmd.stdout)}+0,0`,
+		'-i', `:11.0+0,0`,
 		'-vcodec', 'libx264',
 		'-preset', 'ultrafast',
 		'-tune', 'zerolatency',
